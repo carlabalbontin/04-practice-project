@@ -13,9 +13,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run Lint
-        uses: npm lint
+        run: npm lint
       - name: Run tests
-        uses: npm test
+        run: npm test
   deploy:
     needs: test
     runs-on: ubuntu-latest
