@@ -1,7 +1,7 @@
-name: Lint, Test and Deploy
+name: Lint, Test and Deploy 1
 on: push
 jobs:
-  lint:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -16,10 +16,6 @@ jobs:
         run: npm run lint
       - name: Run tests
         run: npm test
-  deploy:
-    needs: lint
-    runs-on: ubuntu-latest
-    steps:
       - name: Get code
         uses: actions/checkout@v3
       - name: Install NodeJS
