@@ -1,4 +1,4 @@
-name: Lint, Test and Deploy
+name: Issue Output
 on: issues
 jobs:
   output:
